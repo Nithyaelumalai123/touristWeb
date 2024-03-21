@@ -1,0 +1,362 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.overall {
+    width: 100%;
+    min-height: 100%;
+}
+
+.imagediv {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://st2.depositphotos.com/3837271/5507/i/450/depositphotos_55072853-stock-photo-time-to-travel-wooden-sign.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    display: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 30px;
+    top: 10px;
+    position: fixed;
+}
+
+@keyframes logo {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    padding: 0.8rem 2rem;
+    background-color: #FFCF96;
+}
+
+.rightnav {
+    display: flex;
+    gap: 40px;
+}
+
+.rightnav button {
+    padding: 0.4rem 2rem;
+    border: 4px double transparent;
+    background: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+.rightnav button:hover {
+    border: 4px  rgb(17, 7, 15);
+    transform:scale(1.1);
+    background-color:purple; 
+    color: white;
+}
+
+input:checked~.rightnav {
+    background-color: rgb(173, 228, 168);
+    left: 0;
+    transition: 1s;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+input {
+    display: none;
+}
+/* <------------ nav end ------> */
+
+.twobox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+
+.box,.box1 {
+    width: 300px;
+    height: 300px;
+    flex-grow: 0.3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 20px;
+    border: 8px double#940B92;
+    padding: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+.box:hover, .box1:hover {
+    background-color: #940B92;
+    color: white;
+}
+.image1 ,.image2 {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+}
+.image1 img,.image2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box:hover .image1 img, .box1:hover .image2 img {
+    border: 4px solid white;
+}
+.image1 img:hover,.image2 img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.box h1,.box1 h1 {
+    padding-bottom: 10px;
+}
+.pack,.pack1 {
+    text-align: center;
+}
+
+.btn1,.btn2 {
+    padding: 8px 20px;
+    color: red;
+    border: 2px solid #87C4FF;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #D0A2F7;
+    color: #363062;
+    border: 2px dashed saddlebrown;
+}
+
+.heading {
+    color: saddlebrown;
+    font-size: 5vmax;
+    text-align: center;
+}
+
+.smallimg {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.smallimg img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: 5px solid#FF8F8F;
+}
+.smallimg img:hover {
+    border: 10px double#00A9FF;
+}
+
+
+.fourcard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+}
+
+.card1, .card2, .card3 {
+    flex-grow: 0.2;
+    width: 300px;
+    height: 480px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card1:hover,.card2:hover , .card3:hover {
+    border: 5px double#AF2655;
+}
+
+
+.card1 img, .card2 img, .card3 img {
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card1 h1, .card2 h1, .card3 h1 {
+    color: #940B92;
+    padding-bottom: 15px;
+}
+
+.card1 p, .card2 p, .card3 p {
+    color: blue;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.card1 h4 , .card2 h4, .card3 h4 {
+    color: forestgreen;
+    font-size: 20px;
+}
+
+.button {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 3px solid gray;
+}
+
+
+.copyright {
+    width: 100%;
+    background-color: #D0A2F7;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon1 {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.contact, .about, .payment, .service {
+    width: 300px;
+    padding: 5px;
+}
+
+.payment h1{
+    color: #363062;
+}
+
+.color1 {
+    color: blue;
+}
+
+.color2 {
+    color: red;
+}   
+
+.payment img {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.copycontent {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-top: 2px solid white ;
+}
+
+/*media query start*/
+@media screen and (min-width:320px) and (max-width:500px) {
+
+    .rightnav {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        top: 70px;
+    }
+
+    label {
+        display: inline;
+        position: absolute;
+        padding: 20px;
+        right: 0;
+        z-index: 99;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: #FFCF96;
+        position: fixed;
+        height: 70px;
+    }
+
+    .menuicon {
+        display: inline;
+    }
+    .twobox {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .box,.box1 {
+        flex-wrap: wrap;
+        height: 470px;
+        justify-content: center;
+        width: 98%;
+    }
+
+
+}
+@media screen and (min-width:500px) and (max-width:800px) {
+    .box, .box1 {
+        width: 80%;
+    }
+}

@@ -1,0 +1,336 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.overalldiv {
+    width: 100%;
+    min-height: 100%;
+}
+
+.navbar label {
+    display: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 30px;
+    top: 10px;
+    position: fixed;
+}
+
+@keyframes logo {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    padding: 0.8rem 2rem;
+    background-color: #FFCF96;
+}
+
+.navbar .rightnav {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .rightnav button {
+    padding: 0.4rem 2rem;
+    border: 4px double transparent;
+    background: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+.navbar .rightnav button:hover {
+    border: 4px  rgb(15, 8, 13);
+    transform:scale(1.1);
+    background-color: purple; 
+    color: white;
+}
+
+.navbar input:checked~.rightnav {
+    background-color: rgb(173, 228, 168);
+    left: 0;
+    transition: 1s;
+}
+
+.navbar h1 {
+    padding-bottom: 20px;
+}
+
+.navbar input {
+    display: none;
+}
+/* <------------ nav end ------> */
+.overall{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:620px;
+    margin-bottom: 40px;
+}
+.container{
+    background-color:#B4BDFF;
+    width:50%;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding:10px;
+}
+
+.container:hover{
+    border:8px double #860A35;
+}
+input{
+    width:100%;
+    position: relative;
+    padding:13px 8px;
+    margin-top:10px;
+    margin-bottom:15px;
+
+}
+.content{
+    padding: 20px;
+}
+.icon1{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+    background: none;
+  
+}
+.icon1:hover{
+    color:blue;
+    
+}
+.icon2:hover{
+    color:lightgreen;
+}
+.icon3:hover{
+    color:gold;
+
+}
+.icon4:hover{
+    color:green;
+
+}
+.icon5:hover{
+    color: red;
+
+}
+.icon2{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+  
+}
+.icon3{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+  
+}
+.icon4{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+ 
+}
+.icon5{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+ 
+}
+
+form{
+    position: relative;
+    width:100%;
+}
+textarea{
+    resize: none;
+}
+form p{
+    font-size: 20px;
+    
+}
+.linkpage i{
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+.linkpage{
+    display: flex; 
+  align-items: center;
+  justify-content:space-evenly;
+  flex-direction: row;
+  
+
+}
+.twit{
+    color:lightblue;
+}
+.face{
+    color:blue;
+}
+.insta{
+    color:pink;
+}
+.you{
+    color:red;
+}
+ .topic{
+    text-align: center;
+    font-size: 10cqmin;
+    padding-bottom: 30px;
+}
+
+.icon6{
+padding-top:10px;
+font-size: 25px;
+}
+
+.nithi{
+    width:100px;
+}
+
+
+
+.copyright {
+    width: 100%;
+    background-color: #D0A2F7;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon1 {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.contact, .about, .payment, .service {
+    width: 300px;
+    padding: 5px;
+}
+
+.payment h1{
+    color: #363062;
+}
+
+.color1 {
+    color: blue;
+}
+
+.color2 {
+    color: red;
+}   
+
+.payment img {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.copycontent {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-top: 2px solid white ;
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+    
+    .rightnav {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        top: 70px;
+    }
+
+    .navbar label {
+        display: inline;
+        position: absolute;
+        padding: 20px;
+        right: 0;
+        z-index: 99;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: #FFCF96;
+        position: fixed;
+        height: 70px;
+    }
+
+    .menuicon {
+        display: inline;
+    }
+    .container{
+        background-color:#B4BDFF;
+        width:96%;
+    }
+}
